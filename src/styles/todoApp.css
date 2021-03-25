@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.container {
+  padding: 0 10px 0 10px;
+  margin: 20px auto 70px auto;
+}
+
+.container .add_btn {
+  text-align: center;
+  margin: 10px 0;
+  width: 5%;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+}
+.content .no_users_found {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50px);
+  color: rgb(100 96 98 / 33%);
+  font-style: italic;
+  font-size: 1.6rem;
+}
+.content h2 {
+  text-transform: capitalize;
+  margin: 0 0 15px 0;
+}
+.content table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content table #title {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content table #body {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content table thead {
+  border-bottom: 3px solid rgb(68 128 100 / 61%);
+}
+
+.content table tbody:not(:last-child) {
+  border-bottom: 1px solid rgb(34 140 7 / 49%);
+}
+
+.content table #body td {
+  font-size: 15px;
+}
+
+.content table th,
+.content table td {
+  margin: 10px 10px 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.content table .btn {
+  margin: 0 5px;
+}
+
+button {
+  padding: 8px;
+  color: #fff;
+  background-color: rgb(68, 199, 122);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container .content h2 {
+    font-size: 18px;
+  }
+
+  .content table #title {
+    font-size: 17px;
+  }
+  .content table #body td {
+    font-size: 15px;
+  }
+  .container .add_btn {
+    width: 8%;
+  }
+  .content table .btn {
+    margin: 3px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .container .add_btn {
+    width: 8%;
+  }
+
+  .content table .btn {
+    margin: 3px 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  .content table .btn {
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .content table .btn {
+    margin: 0 5px;
+  }
+}
